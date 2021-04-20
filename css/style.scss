@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: #fc911e;
+    width: 100%;
+    height: 100vh;
+    
+    h1 {
+      border-bottom: 2px solid black;
+    }
+    
+     h2 {
+      border-bottom: 1px solid black;
+    }
+    
+    blockquote {
+      border-left: 3px solid gray;
+      padding-left: 10px;
+    }
+    
+    code {
+      background: #FFF;
+      padding: 1px 4px 2px 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    
+     pre {
+      background: white;
+      padding: 5px 0 5px 5px;
+    }
+    
+    img {
+      max-height: 200px;
+    }
+  }
+  
+  .editor, .preview {
+    width: 50%;
+  }
+  
+  .editor {
+    position: fixed;
+    left: 50%;
+      
+    #editor {
+      background-color: #ffc88e;
+      width: 99%;
+      height: 600px;
+      padding-top: 60px;
+      outline: none;
+    }
+  }
+  
+  .preview {
+    display: inline-block;
+    
+    #preview {
+      padding-top: 40px;
+      margin: 0 10px;
+    }
+  }
+  
+  .div-heading {
+    position: fixed;
+    background-color: #372e6d;
+    border: 2px solid #181430;
+    width: 50%;
+    
+    .div-heading-text {
+      color: #fcedff;
+      margin: 10px 10px;
+      font-size: 25px;
+      font-family: 'Archivo Black', sans-serif;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    
+    body {
+      overflow-x: hidden;
+    }
+    
+    .editor, .preview {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    
+    .editor, .div-heading {
+      position: inherit;
+    }
+    
+    .div-heading {
+      width: 100%;
+    }
+  }
