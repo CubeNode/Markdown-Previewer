@@ -1,3 +1,5 @@
+import { marked } from 'marked'
+
 console.log("Start");
 const placeholderText = 
 `# Welcome to my React Markdown Previewer
